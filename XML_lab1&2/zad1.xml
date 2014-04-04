@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="zad1.xsl"?>
+
+<tabelka width="5" height="10" border="1">
+
+	<wiersz>
+		<komorka>
+			<tabelka width="5" height="10" border="1">
+				<wiersz>
+					<komorka>1</komorka>
+					<komorka>2</komorka>
+					<komorka>2</komorka>
+				</wiersz>
+			</tabelka>
+		</komorka>
+		<komorka>2</komorka>
+		<komorka>2</komorka>
+	</wiersz>
+
+	<wiersz>
+		<komorka>9</komorka>
+		<komorka>
+			<tabelka width="5" height="10" border="1">
+				<wiersz>
+					<komorka>9</komorka>
+					<komorka>
+						<tabelka width="5" height="10" border="1">
+							<wiersz>
+								<komorka>1</komorka>
+								<komorka>2</komorka>
+								<komorka>2</komorka>
+							</wiersz>
+						</tabelka>
+					</komorka>
+					<komorka>9</komorka>
+				</wiersz>
+			</tabelka>
+		</komorka>
+		<komorka>9</komorka>
+	</wiersz>
+
+	<wiersz>
+		<komorka>5</komorka>
+		<komorka>6</komorka>
+		<komorka>
+
+			<tabelka width="5" height="10" border="1">
+				<wiersz>
+					<komorka>1</komorka>
+					<komorka>2</komorka>
+					<komorka>2</komorka>
+				</wiersz>
+			</tabelka>
+
+		</komorka>
+	</wiersz>
+
+</tabelka>

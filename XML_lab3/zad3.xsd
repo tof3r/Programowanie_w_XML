@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="person">
+  <xs:complexType>
+    <xs:sequence>
+		<xs:element name="firstname" type="namesType" />
+		<xs:element name="lastname" type="namesType" />
+		<xs:element name="birthdate" type="birthType" />
+		<xs:element name="age" type="ageType" />
+		<xs:element name="PESEL" type="peselType" />  
+		<xs:element name="sex" type="sexType" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+  <xs:simpleType name="namesType">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="35"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+<xs:simpleType name="birthType">
+    <xs:restriction base="xs:date">
+      <xs:maxInclusive value="2013-04-13"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+<xs:simpleType name="ageType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+  <xs:simpleType name="peselType">
+    <xs:restriction base="xs:string">
+	 <xs:minLength value="11"/>
+      <xs:maxLength value="11"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+<xs:simpleType name="sexType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="M"/>
+    <xs:enumeration value="K"/>
+  </xs:restriction>
+  </xs:simpleType>
+
+
+</xs:schema>

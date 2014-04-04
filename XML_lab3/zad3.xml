@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<person> 
+<firstname>Dawid</firstname>
+<lastname>Gliński</lastname>
+<birthdate>1990-09-10</birthdate>
+<age>23</age>
+<PESEL>90091000917</PESEL>
+<sex>M</sex>
+</person>
+
+
+<!-- 
+
+XML-FO
+pobrac apahe fop
+
+-->
